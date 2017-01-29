@@ -1,0 +1,18 @@
+<h1>Current Games</h1>
+
+<h3><a ui-sref="games.new">Create a game</a></h3>
+<hr>
+
+<a ui-sref="games.detail({id: game.id})" data-ng-repeat="game in games">
+  <h3>
+    <span data-ng-bind="game.field"></span> -
+    <span data-ng-bind="game.opponent"></span> -
+    <span data-ng-bind="game.date | date: 'medium'"></span>
+  </h3>
+</a>
+
+<hr>
+
+<div class="gamesDetail">
+  <ui-view></ui-view>
+</div>

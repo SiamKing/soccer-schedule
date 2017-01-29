@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  field: MyString
+  time: 2017-01-27 15:22:05
+  opponent: MyString
+
+two:
+  field: MyString
+  time: 2017-01-27 15:22:05
+  opponent: MyString
