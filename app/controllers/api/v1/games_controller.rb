@@ -43,6 +43,6 @@ class Api::V1::GamesController < ApplicationController
   end
 
   def find_game
-    @game = Game.find_by(params[:id])
+    @game = Game.find_by(id: params[:id])
   end
 end

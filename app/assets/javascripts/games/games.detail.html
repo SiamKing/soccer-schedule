@@ -3,4 +3,5 @@
 <p>This game will be played on field <span data-ng-bind="vm.game.field"></span> at <span data-ng-bind="vm.game.date | date : 'medium'"></span>.
 The opponent team is <span data-ng-bind="vm.game.opponent"></span></p>
 
+<button ui-sref="games.update({id: vm.game.id})">Update Game</button>
 <button ng-click="vm.deleteGame()">Delete Game</button>

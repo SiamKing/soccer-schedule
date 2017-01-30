@@ -20,6 +20,11 @@
          templateUrl: 'games/games.new.html',
          controller: 'GamesController as vm'
        })
+       .state('games.update', {
+         url: 'games/update/:id',
+         templateUrl: 'games/games.update.html',
+         controller: 'GamesController as vm'
+       })
        .state('games.detail', {
          url: 'games/:id',
          templateUrl: 'games/games.detail.html',

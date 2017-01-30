@@ -1,0 +1,11 @@
+<h1>Update Game {{vm.game.id}}</h1>
+
+<form ng-submit="vm.updateGame()">
+  <label for="field">Game Field:</label>
+  <input type="text" ng-model="vm.game.field">
+  <label for="opponent">Opponent:</label>
+  <input type="text" ng-model="vm.game.opponent">
+  <label for="date">Date:</label>
+  <input type="date" ng-model="vm.game.date">
+  <input type="submit" value="Update Game">
+</form>

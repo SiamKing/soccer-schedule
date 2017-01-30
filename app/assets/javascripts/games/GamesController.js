@@ -24,7 +24,18 @@ function GamesController(GamesService, $stateParams, $scope, $state) {
           $scope.$parent.games = currentGames;
           $state.go('games')
         })
-    }
+    };
+
+    vm.updateGame = function () {
+      GamesService
+        .update(vm.game, vm.game.id)
+        .then((game) => {
+          var currentGames = $scope.$parent.games.filter(game => game.id !== vm.game.id);
+          currentGames.push(game)
+          $scope.$parent.games = currentGames;
+          $state.go('games')
+        })
+    };
 
 }
 

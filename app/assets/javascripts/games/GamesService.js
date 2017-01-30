@@ -9,7 +9,8 @@
       all,
       getDetail,
       create,
-      destroy
+      destroy,
+      update
     }
     function all() {
       return $http.get('/api/v1/games')
@@ -27,6 +28,22 @@
       const req = {
         method: 'POST',
         url: '/api/v1/games',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        data: {
+          game: gameInfo
+        }
+      }
+      return $http(req)
+        .then(response => response.data)
+        .catch(err => console.log(err))
+    }
+
+    function update(gameInfo, id) {
+      const req = {
+        method: 'PATCH',
+        url: `/api/v1/games/${id}`,
         headers: {
           'Content-Type': 'application/json'
         },

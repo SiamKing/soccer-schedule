@@ -8,9 +8,9 @@
 
 ## Prep Client
 
-- Add package manager (bower)
-- Add Angular, ANgular-UI-Router and ANgular Rails Templates
-- Add to asset pipeline
+- Add package manager (bower) √
+- Add Angular, ANgular-UI-Router and ANgular Rails Templates √
+- Add to asset pipeline √
 
 ## CLient
 - Create root page with list of games
